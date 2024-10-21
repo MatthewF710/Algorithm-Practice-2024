@@ -20,7 +20,7 @@ function returnInput(input) {
   }
 
   return output;
-}
+} //no iteration
 
 function rockPaperScissors(input) {
   const random = Math.floor(Math.random() * 100);
@@ -28,7 +28,9 @@ function rockPaperScissors(input) {
   let outcome;
 
   for (let i = 0; i <= random; i++) {
+    //iteration
     if (i % 3 == 0) {
+      //selection
       opponentChoice = "rock";
     } else if (i % 2 == 0) {
       opponentChoice = "paper";
@@ -61,7 +63,7 @@ function rockPaperScissors(input) {
     } else {
       outcome = "draw";
     }
-  }
+  } //iteration and selection, is a function.
   history.push(outcome);
 
   DOMSelectors.history.innerHTML = "";
@@ -98,7 +100,7 @@ function getHistory() {
         <h4>Game ${i + 1}: ${history[i].toUpperCase()}</h4>
         </div>`
     );
-  }
+  } // iteration and selectation, is a function
 
   DOMSelectors.history.insertAdjacentHTML(
     "afterbegin",
