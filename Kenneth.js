@@ -33,6 +33,7 @@ function rockPaperScissors(input) {
       //selection
       opponentChoice = "rock";
     } else if (i % 2 == 0) {
+      //selection
       opponentChoice = "paper";
     } else {
       opponentChoice = "scissors";
